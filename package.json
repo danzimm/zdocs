@@ -1,0 +1,33 @@
+{
+	"name" : "zDocs",
+	"preferGlobal" : false,
+	"version" : "0.0.1",
+	"author" : "Dan Zimmerman <daniel.zimmerman@me.com>",
+	"description" : "A documentation framework for source codes of all sorts of languages!",
+	"contributors" : [
+		{
+			"name" : "JD Hartley",
+			"email" : "anonymous@nope.never"
+		}
+	],
+	"bin" : {
+
+	},
+	"scripts" : {
+	},
+	"main" : "./lib/zdocs.js",
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/danzimm/zdocs.git"
+	},
+	"keywords" : [
+		"documentation",
+		"server",
+		"moo"
+	],
+	"private" : "true",
+	"dependencies": {
+	},
+	"license" : "MIT",
+	"engines" : ">=0.6"
+}
