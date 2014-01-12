@@ -1,0 +1,13 @@
+{
+	"name" : "zDocsTests",
+	"preferGlobal" : false,
+	"version" : "0.0.1",
+	"author" : "Dan Zimmerman <daniel.zimmerman@me.com>",
+	"description" : "zDocs Tests!",
+	"private" : "true",
+	"dependencies": {
+		"express"	: "*",
+		"stylus"	: "*",
+		"nib"		: "*"
+	}
+}

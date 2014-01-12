@@ -1,0 +1,20 @@
+extend layout
+block content
+  h1#pagetitle #{pagetitle}
+  each cat in categories
+    h2.categoryheader= cat.name
+    each item in cat.items
+      h3.categorysubheader= item.context.title
+      |!{item.draw()}
+
+block sidebar
+  nav
+    ul
+      li.toc Table of Contents
+      each cat in categories
+        if cat.drawSidebar
+          li.sidebarheader= cat.name
+          each item in cat.items
+            li= item.context.title
+            if item.drawSidebar()
+              |!{item.drawSidebar()}

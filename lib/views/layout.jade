@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title #{doccenter} - #{pagetitle}
+		if stylesheet
+			link(rel='stylesheet', href=stylesheet)
+	body
+		header.mainheader
+			h1 #{doccenter}
+		header.subheader
+			h1 #{pagetitle}
+		.container
+			.main-content
+				block content
+			.sidebar
+				block sidebar
+		footer
+			p Running on node with Express, Jade and Stylus
