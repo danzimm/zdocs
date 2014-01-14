@@ -94,71 +94,99 @@ body {
   font-family: 'Georgia';
 }
 .mainheader {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 550px;
   font-family: 'Quicksand';
-  padding: 0.5em 0.5em;
+  padding: 7.5px 7.5px;
   color: #fff;
-  font-size: 1em;
+  font-size: 13px;
   text-align: left;
   background-color: #50a186;
   border-bottom: 1px solid #38715e;
   text-shadow: 0px -1px 0px #38715e;
 }
 .subheader {
-  font: 215% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+  z-index: 4;
+  position: fixed;
+  top: 26px;
+  left: 0;
+  right: 0;
+  min-width: 550px;
+  font: 100% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
   padding: 0.4em 0.4em;
   background-color: #c7c7c7;
   border-bottom: 1px solid #8b8b8b;
   text-align: center;
-  font-size: 1em;
   color: #000;
 }
+.subheader .toc {
+  text-align: left;
+  position: fixed;
+  left: 0;
+  font-size: 11px;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+.subheader h1 {
+  float: none;
+}
 .container {
+  z-index: 2;
   margin: 30px auto;
-}
-.main-content {
-  margin-left: 228px;
-  padding-left: 2.15em;
+  position: absolute;
+  top: 57px;
+  left: 228px;
+  bottom: 0;
+  right: 0;
+  padding-left: 2em;
+  padding-right: 2em;
   font: 100% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 13px;
 }
-.main-content p {
-  font-size: 80%;
-}
-.main-content ul {
+.container ul {
   margin-left: 7px;
 }
-.main-content ul li {
-  font-size: 80%;
-}
-.main-content .categorysubheader {
-  font-size: 115%;
-  margin-bottom: 1em;
+.container .categorysubheader {
+  font-size: 145%;
+  font-weight: 400;
+  margin-bottom: 0.5em;
   margin-top: 1em;
 }
-.main-content .categoryheader {
+.container .categoryheader {
   font-size: 135%;
   color: #468c75;
   margin-bottom: 1em;
   margin-top: 1em;
 }
-.main-content #pagetitle {
+.container #pagetitle {
   font-size: 200%;
   margin-bottom: 1em;
 }
 .sidebar {
+  z-index: 2;
+  font-size: 1em;
   position: fixed;
   font: 115% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
   left: 0;
   bottom: 0;
-  top: 3.5em;
+  top: 57px;
   width: 228px;
   background-color: #d9dedb;
   border-right: 1px solid #93a198;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .sidebar ul {
+  text-indent: -10px;
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0.6em;
+  font-size: 11px;
+  width: 190px;
 }
 .sidebar ul :nth-child(2) {
   margin-top: 0.4em;
@@ -166,6 +194,10 @@ body {
 .sidebar ul li {
   padding-left: 3em;
   margin-bottom: 0.3em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 .sidebar ul .sidebarheader {
   padding-left: 2em;
@@ -177,15 +209,10 @@ body {
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   padding-left: 2em;
+  white-space: normal;
 }
 .sidebar ul .sidebarlist a {
   color: inherit;
-}
-.sidebar ul .toc {
-  border-bottom: 1px solid #93a198;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
 }
 p {
   line-height: 1.8;
@@ -195,10 +222,33 @@ code {
   font-family: Courier, Consolas, monospace;
   font-size: 103%;
 }
+div.declaration {
+  font: 102% Courier, Consolas, monospace;
+  margin-top: 1.2em;
+  margin-bottom: 0.9em;
+  font-size: gtgt;
+}
 a {
   text-decoration: none;
   color: #97bfb2;
   font-size: 103%;
+}
+h5 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding: 0;
+  font-weight: bold;
+}
+span.parameter {
+  font-style: italic;
+}
+dl.termdef dt {
+  margin-top: 0;
+}
+dl.termdef dd {
+  margin-left: 1.25em;
+  margin-top: 0.083em;
+  margin-bottom: 0.5em;
 }
 a:hover {
   text-decoration: underline;

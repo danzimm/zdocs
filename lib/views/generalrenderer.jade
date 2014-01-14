@@ -8,13 +8,13 @@ block content
       |!{item.draw()}
 
 block sidebar
-  nav
-    ul
-      li.toc Table of Contents
-      each cat in categories
-        if cat.drawSidebar
-          li.sidebarheader= cat.name
-          each item in cat.items
-            li= item.context.title
-            if item.drawSidebar()
-              |!{item.drawSidebar()}
+  ul
+    each cat in categories
+      if cat.drawSidebar
+        li.sidebarheader= cat.name
+        each item in cat.items
+          li= item.context.title
+          if item.drawSidebar()
+            |!{item.drawSidebar()}
+block topleftbar
+  h4.toc Table of Contents
