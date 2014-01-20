@@ -4,6 +4,7 @@ var express	= require("express"),
 	nib = require('nib'),
 	app		= express();
 
+
 function compile(str, path) {
 	return stylus(str).set('filename', path).use(nib());
 }
