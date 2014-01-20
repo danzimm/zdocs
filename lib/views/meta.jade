@@ -1,0 +1,28 @@
+extend layout
+block content
+  div.metacontainer
+    h1#pagetitle #{pagetitle}
+    div.metadescription
+        |!{description}
+    table.specbox
+      tbody
+        each item in specialData
+          tr
+            td(scope="row")
+              strong
+                span
+                  |!{item.key}
+            td
+              div.zSharedSpecBoxHeadList
+                |!{item.val}
+    table.itembox
+      tbody
+        tr.itemboxhdr
+          each col in columns
+            th(scope="col") 
+              |!{col.title}
+        - for ( var i = 0; i < maxitems; i++ )
+          tr
+            each col in columns
+              if (i < col.items.length)
+                td !{col.items[i]}

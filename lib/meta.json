@@ -1,0 +1,20 @@
+{
+    "title" : "zDocs Framework",
+    "description" : "README.md",
+    "specialData" : [
+        {
+            "key" : "Framework",
+            "link" : "https://github.com/danzimm/zdocs"
+        },
+        {
+            "key" : "Documentation",
+            "link" : "http://zdocs.danz.im"
+        }
+    ],
+    "columns" : [
+        {
+            "title" : "File References",
+            "items" : ".*\\.js$"
+        }
+    ]
+}

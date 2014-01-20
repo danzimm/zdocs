@@ -10,9 +10,9 @@ html
         header.subheader
             block topleftbar
             h1 #{pagetitle}
-        article.container
+        article.container(style=hideSidebar ? 'left:0' : '')
             block content
             footer
                 p Running on node with Express, Jade and Stylus
-        nav.sidebar
+        nav.sidebar(style=hideSidebar ? 'width:0' : '')
             block sidebar

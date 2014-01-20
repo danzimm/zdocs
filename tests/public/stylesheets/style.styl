@@ -2,6 +2,9 @@
 @import url('http://fonts.googleapis.com/css?family=Quicksand')
 global-reset()
 
+ul
+  list-style inherit
+
 sub-color = #C7C7C7
 main-color = #50A186
 sb-color = #D9DEDB
@@ -128,8 +131,44 @@ body
       a
         color inherit
 
-p
-  line-height 1.8
+.metacontainer
+  padding-left 2em
+  padding-right 2em
+  .metadescription
+    ul
+      margin-left 18px
+      li
+        margin-top 1em
+    p
+      margin-top 1em
+    margin-bottom 2em
+
+
+.specbox
+  border-top 1px solid #d6e0e5
+  margin-left 2.5em
+  margin-bottom 2.5em
+  tr
+    td
+      border-bottom 1px solid #d6e0e5
+      padding .667em
+      font-size 90%
+      
+      strong
+        font-weight bold
+
+      .zSharedSpecBoxHeadList
+        text-align right
+
+.itembox
+  padding-left 2.5em
+  tbody
+    tr.itemboxhdr
+      th
+        padding-bottom 0.5em
+    tr
+      td
+        font-size 90%
 
 code
   color #666

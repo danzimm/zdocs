@@ -90,6 +90,9 @@ td {
 a img {
   border: none;
 }
+ul {
+  list-style: inherit;
+}
 body {
   font-family: 'Georgia';
 }
@@ -214,8 +217,46 @@ body {
 .sidebar ul .sidebarlist a {
   color: inherit;
 }
-p {
-  line-height: 1.8;
+.metacontainer {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.metacontainer .metadescription {
+  margin-bottom: 2em;
+}
+.metacontainer .metadescription ul {
+  margin-left: 18px;
+}
+.metacontainer .metadescription ul li {
+  margin-top: 1em;
+}
+.metacontainer .metadescription p {
+  margin-top: 1em;
+}
+.specbox {
+  border-top: 1px solid #d6e0e5;
+  margin-left: 2.5em;
+  margin-bottom: 2.5em;
+}
+.specbox tr td {
+  border-bottom: 1px solid #d6e0e5;
+  padding: 0.667em;
+  font-size: 90%;
+}
+.specbox tr td strong {
+  font-weight: bold;
+}
+.specbox tr td .zSharedSpecBoxHeadList {
+  text-align: right;
+}
+.itembox {
+  padding-left: 2.5em;
+}
+.itembox tbody tr.itemboxhdr th {
+  padding-bottom: 0.5em;
+}
+.itembox tbody tr td {
+  font-size: 90%;
 }
 code {
   color: #666;
