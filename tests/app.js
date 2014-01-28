@@ -9,7 +9,7 @@ function compile(str, path) {
 	return stylus(str).set('filename', path).use(nib());
 }
 
-app.use(express.logger('dev'));
+//app.use(express.logger('dev'));
 app.use(stylus.middleware({
 	src : __dirname + "/public",
 	compile : compile
