@@ -13,8 +13,12 @@
     ],
     "columns" : [
         {
-            "title" : "File References",
+            "title" : "JS File References",
             "items" : ".*\\.js$"
+        },
+        {
+            "title" : "CSS File References",
+            "items" : ".*\\.css$"
         }
     ]
 }

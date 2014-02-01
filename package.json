@@ -31,5 +31,5 @@
 		"markdown"	: "*"
 	},
 	"license" : "MIT",
-	"engines" : ">=0.6"
+	"engines" : ">=0.8"
 }

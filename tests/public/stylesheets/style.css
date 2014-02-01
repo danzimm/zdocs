@@ -1,3 +1,13 @@
+/*
+ * @zdocs filedescription
+ *
+ * @@ This is an example comment brah
+ *
+ * @Road_Map I plan to add more info...
+ *
+ * @Another_Thing whoaaa a thing?
+ *
+ */
 @import url("http://fonts.googleapis.com/css?family=Quicksand");
 html,
 body,
@@ -262,6 +272,7 @@ body {
 }
 .itembox tbody tr.itemboxhdr th {
   padding-bottom: 0.5em;
+  padding-right: 1.5em;
 }
 .itembox tbody tr td {
   font-size: 90%;
@@ -275,7 +286,6 @@ div.declaration {
   font: 102% Courier, Consolas, monospace;
   margin-top: 1.2em;
   margin-bottom: 0.9em;
-  font-size: gtgt;
 }
 a {
   text-decoration: none;
