@@ -17,8 +17,8 @@ app.use(express.static(__dirname + '/public'));
 
 //app.use(express.logger('dev'));
 app.use('/', zdocs.middleware({
-	paths : ['../lib', './public/stylesheets/'],
-	name : 'zDocs Center',
+	paths : ['../lib/', './public/stylesheets/'],
+	name : 'zDocs Doc Center',
     stylesheet : '/stylesheets/style.css'
 }));
 
