@@ -1,3 +1,7 @@
+<!---
+title: README
+-->
+
 zDocs is a documentation framework created by a naive developer who wanted a simple way to document all of his source files. By *all* he means all languages that he uses. Currently zDocs supports javascript only; however, in the future support for objective-c, python and many more will be added! There are really two main parts of the zDocs API:
 
 - Rendering: One can create his own renderer for a given file type. His renderer would be responsible for parsing the files for the documentation and then creating the HTML to display it. Thankfully the zDocs API has a convenience function to parse comment blocks to get documentation information and a convenience class for creating the HTML to display!

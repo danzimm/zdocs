@@ -28,7 +28,7 @@
 	"private" : "true",
 	"dependencies": {
 		"jade"		: "*",
-		"markdown"	: "*"
+		"marked"	: "*"
 	},
 	"license" : "MIT",
 	"engines" : ">=0.8"
