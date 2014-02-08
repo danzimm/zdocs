@@ -6,7 +6,7 @@ var express	= require("express"),
 
 
 var compile = function(str, path) {
-    return stylus(str).set('filename', path).use(nib());
+    return stylus(str).set('filename', path).set('include css', true).use(nib());
 };
 
 app.use(stylus.middleware({

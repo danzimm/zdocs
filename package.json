@@ -26,8 +26,8 @@
 		"moo"
 	],
 	"dependencies": {
-		"jade"		: "*",
-		"marked"	: "*"
+		"jade"		    : "*",
+		"marked"	    : "*"
 	},
 	"license" : "MIT",
 	"engines" : ">=0.8"

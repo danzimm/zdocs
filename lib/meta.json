@@ -14,11 +14,18 @@
     "columns" : [
         {
             "title" : "JS File References",
-            "items" : ".*\\.js$"
+            "items" : [
+                ".*\\.js$",
+                "-cssrenderer.js"
+            ]
         },
         {
             "title" : "CSS File References",
             "items" : ".*\\.css$"
+        },
+        {
+            "title" : "Headers",
+            "items" : ".*\\.h$"
         }
     ]
 }
