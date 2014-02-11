@@ -17,6 +17,12 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+ *
+ * @zdocs class
+ *
+ */
+
 @interface DZMagnifyingView : UIView {
     UIImage *fullImage;
     CGAffineTransform rotationTransform;
@@ -25,22 +31,26 @@
     CAShapeLayer *borderLayer;
     BOOL queueHide;
 }
-
-@property (nonatomic) CGFloat closeupRadius;
+/*
+ */
+@property (nonatomic, readwrite) CGFloat closeupRadius;
+/*
+ */
 @property (nonatomic) CGPoint closeupCenter;
+/*
+ */
 @property (nonatomic) UIView *targetView;
-
+/*
+ */
 - (void)show;
+/**/
 - (void)hide;
-
+/**/
 - (void)dosomething:(NSObject *)obja withAnotherString:(NSString *)str afterDelay:(CGFloat)flt;
 
 @end
 
 /*
- * @zdocs function
- *
- * @name dosmth
  *
  * @parameter ctx={void *} Context of doing something.
  *
@@ -52,10 +62,13 @@
  *
  * @parameter str={char *} Some char array.
  *
- * @retval {void} Returns nothing.
- *
  * @description Yo yo yo I am a *G*
  *
  */
-void dosmth(void *ctx, int n, float f, char c, char *str);
-
+static void dosmth(void *ctx, int n, float f, char c, char *str);
+/*
+ */
+static char *a;
+/*
+ */
+const char c;
