@@ -16,7 +16,7 @@
             "title" : "JS File References",
             "items" : [
                 ".*\\.js$",
-                "-cssrenderer.js"
+                "-tst.js"
             ]
         },
         {

@@ -4,23 +4,11 @@ var express	= require("express"),
     nib     = require('nib'),
 	app		= express();
 
-
-var compile = function(str, path) {
-    return stylus(str).set('filename', path).set('include css', true).use(nib());
-};
-
-app.use(stylus.middleware({
-    src : __dirname + '/public',
-    compile : compile
-}));
-app.use(express.static(__dirname + '/public'));
-
 //app.use(express.logger('dev'));
-app.use('/', zdocs.middleware({
-	paths : ['../lib/', './public/stylesheets/'],
-	name : 'zDocs Doc Center',
-    stylesheet : '/stylesheets/style.css'
-}));
+zdocs.stackDoc(app, '/doccenter', {
+	paths : ['../lib/', '../lib/public/stylesheets/'],
+	name : 'zDocs Doc Center'
+});
 
 app.use(function(req, res) {
 	res.send("404 brah");

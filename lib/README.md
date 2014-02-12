@@ -1,5 +1,5 @@
 <!---
-title: README
+title: Info
 -->
 
 zDocs is a documentation framework created by a naive developer who wanted a simple way to document all of his source files. By *all* he means all languages that he uses. Currently zDocs supports javascript only; however, in the future support for objective-c, python and many more will be added! There are really two main parts of the zDocs API:
