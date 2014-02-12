@@ -103,6 +103,10 @@ a img {
 ul {
   list-style: inherit;
 }
+/*
+sub-color = #C7C7C7
+main-color = #50A186
+*/
 body {
   font-family: 'Georgia';
 }
