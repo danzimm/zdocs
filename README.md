@@ -56,7 +56,7 @@ The string between `{}` denotes the type of the parameter/retval. The `arg1/arg2
 
 ###Creating the Server
 Few still with me? Let's talk about starting up the server. Here is an example script:
-```javscript
+```javascript
     var app = require('express')(),
         zdocs = require('zdocs');
 
