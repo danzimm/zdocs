@@ -16,16 +16,9 @@
             "title" : "JS File References",
             "items" : [
                 ".*\\.js$",
-                "-tst.js"
+                "-chdrrenderer.js",
+                "-jsrenderer.js"
             ]
-        },
-        {
-            "title" : "CSS File References",
-            "items" : ".*\\.css$"
-        },
-        {
-            "title" : "Headers",
-            "items" : ".*\\.h$"
         }
     ]
 }

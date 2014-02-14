@@ -19,5 +19,5 @@ html
                 p Running on node with Express, Jade and Stylus
         nav#sidebar(style=hideSidebar ? 'width:0' : '')
             div#handle
-                img(src=root+"/images/handle.svg", style="margin-top: -15px; position: relative; top: 50%;")
+                img(src=root+(root[root.length-1] == '/' ? '' : '/')+"images/handle.svg", style="margin-top: -15px; position: relative; top: 50%;")
             block sidebar

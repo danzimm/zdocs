@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+var express	    = require("express"),
+    minimist    = require('minimist'),
+	zdocs       = require("../lib/zdocs"),
+    argv        = minimist(process.argv.slice(2)),
+    dirs        = (argv._.length > 0 ? argv._ : ["./"]),
+    name        = (argv.name ? argv.name : "Documentation Center"),
+    port        = (argv.port ? parseInt(argv.port) : 3001),
+    path        = (argv.path ? argv.path : "/"),
+    app;
+
+if (argv.help) {
+    console.log(process.argv[1] + " [--name=NAME] [--port=PORT] [--path=PATH] dir,...");
+    console.log("");
+    console.log("\tNAME     : The name of the documentation center you want to create.      Default: 'Documentation Center'");
+    console.log("\tPORT     : The port you want the server to start on.                     Default: 3001");
+    console.log("\tPATH     : The path you want the documentation center to be placed at.   Default: '/'");
+    console.log("\t             For example, pass '/fooey' and you will be able to access");
+    console.log("\t             the documentation center from `localhost:PORT/fooey`");
+    console.log("\tdir,...  : A list of dirs you want the documentation server to render    Default: ['./']");
+    console.log("");
+    process.exit(0);
+}
+
+app = express();
+
+zdocs.stackDoc(app, path, {
+	paths : dirs,
+	name : name
+});
+
+app.listen(port);

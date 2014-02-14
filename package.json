@@ -1,7 +1,7 @@
 {
 	"name" : "zdocs",
-	"preferGlobal" : false,
-	"version" : "0.1.0",
+	"preferGlobal" : true,
+	"version" : "0.2.0",
 	"author" : "Dan Zimmerman <daniel.zimmerman@me.com>",
 	"description" : "A documentation framework for source codes of all sorts of languages!",
 	"contributors" : [
@@ -11,9 +11,10 @@
 		}
 	],
 	"bin" : {
-
+        "zdocs" : "./bin/zdocs"
 	},
 	"scripts" : {
+        "start" : "node ./bin/zdocs"
 	},
 	"main" : "./lib/zdocs.js",
 	"repository" : {
@@ -30,7 +31,8 @@
 		"marked"	    : "*",
         "stylus"        : "*",
         "nib"           : "*",
-        "express"       : "*"
+        "express"       : "*",
+        "minimist"      : "*"
 	},
 	"license" : "MIT",
 	"engines" : ">=0.8"
