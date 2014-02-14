@@ -2,8 +2,10 @@ doctype html
 html
     head
         title #{doccenter} - #{pagetitle}
-        if stylesheet
+        each stylesheet in stylesheets
             link(rel='stylesheet', type="text/css", href=stylesheet)
+        each script in scripts
+            script(src=script)
     body
         header.mainheader
             a(href=root)
@@ -11,9 +13,11 @@ html
         header.subheader
             block topleftbar
             h1 #{pagetitle}
-        article.container(style=hideSidebar ? 'left:0' : '')
+        article#container(style=hideSidebar ? 'left:0' : '')
             block content
             footer
                 p Running on node with Express, Jade and Stylus
-        nav.sidebar(style=hideSidebar ? 'width:0' : '')
+        nav#sidebar(style=hideSidebar ? 'width:0' : '')
+            div#handle
+                img(src=root+"/images/handle.svg", style="margin-top: -15px; position: relative; top: 50%;")
             block sidebar

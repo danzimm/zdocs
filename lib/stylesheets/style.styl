@@ -60,7 +60,7 @@ body
   text-align center
   color #000
   
-  .toc
+  #toc
     text-align left
     position fixed
     left 0
@@ -71,7 +71,7 @@ body
   h1
     float none
  
-.container
+#container
   z-index 2
   margin 30px auto
   position absolute
@@ -104,7 +104,7 @@ body
     font-size 215%
     margin-bottom 1em
 
-.sidebar
+#sidebar
   z-index 2
   font-size 1em
   position fixed
@@ -112,13 +112,21 @@ body
   left 0
   bottom 0
   top 57px
-  width sb-width 
+  width sb-width
   background-color sb-color
   border-right 1px solid darken(sb-color, 30%)
   overflow-y auto
   overflow-x hidden
+  
+  #handle
+    width 10px
+    position relative
+    float right
+    top 0
+    height 100%
 
   ul
+    resize none
     text-indent -10px
     list-style none
     margin 0
