@@ -154,6 +154,9 @@ body {
   margin-top: 3px;
   margin-left: 10px;
 }
+.subheader #toc:hover {
+  cursor: pointer;
+}
 .subheader h1 {
   float: none;
 }
@@ -210,6 +213,9 @@ body {
   float: right;
   top: 0;
   height: 100%;
+}
+#sidebar #handle:hover {
+  cursor: ew-resize;
 }
 #sidebar ul {
   resize: none;
