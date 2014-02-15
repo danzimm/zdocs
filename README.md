@@ -74,4 +74,7 @@ Now lets disect this. The main function one should call is `zdocs.stackDoc`. The
 ###Now what?
 Now you can create your very own documentation server ever so easily! If you have suggestions or comments let me know. Pull requests are welcome, as long as they encourage the growth of zdocs!
 
+###Live Example
+I have an example on my [site](http://docs.danzimm.com/zdocs/)!
+
 ###License: MIT
