@@ -1,7 +1,7 @@
 {
 	"name" : "zdocs",
 	"preferGlobal" : true,
-	"version" : "0.2.3",
+	"version" : "0.2.4",
 	"author" : "Dan Zimmerman <daniel.zimmerman@me.com>",
 	"description" : "A documentation framework for source codes of all sorts of languages!",
 	"contributors" : [
