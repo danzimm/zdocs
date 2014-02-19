@@ -191,6 +191,7 @@ body {
   margin-top: 1em;
 }
 #container ul {
+  margin: 7.5px 0;
   margin-left: 7px;
   list-style: none;
 }
@@ -209,6 +210,31 @@ body {
 #container #pagetitle {
   font-size: 215%;
   margin-bottom: 1em;
+}
+#container .subcontent {
+  margin: 15px 0;
+}
+#container .headercontent h1 {
+  font-size: 1.45em;
+  border-bottom: 1px solid #ddd;
+  margin: 1em 0 15px;
+}
+#container .headercontent p {
+  margin: 15px 0;
+}
+#container .headercontent h2 {
+  font-size: 1.3em;
+  border-bottom: 1px solid #ddd;
+  margin: 1em 0 15px;
+}
+#container .headercontent h3 {
+  font-size: 1.12em;
+  margin: 1em 0 15px;
+}
+#container .headercontent ul {
+  margin: 15px 0;
+  margin-left: 17px;
+  list-style: disc;
 }
 #sidebar {
   z-index: 2;

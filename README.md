@@ -1,3 +1,4 @@
+<!-- title: -->
 [![Build Status](https://travis-ci.org/danzimm/zdocs.png?branch=master)](https://travis-ci.org/danzimm/zdocs)
 #zDocs
 A node framework for creating a documentation server.
@@ -22,9 +23,7 @@ The key can have any character in `[\w\d\\]` or be simply an `@`. The `@` ket is
     @#somefile.md
 which will load in a markdown file, parse it for a `<!-- title: sometitle --->` sequence and automatically add key-value pair where the title it parsed is the key and the value in the markdown data automatically converted to HTML. This allows a sort of 'importing' of data.
 
-Now we shall discuss example comments.
-
-While each renderer might define its own keys, I will outline the general keys that are implemented in the `js`, `h` renderers. 
+Now we shall discuss example comments. While each renderer might define its own keys, I will outline the general keys that are implemented in the `js`, `h` renderers. 
 
 To begin each file can have a description signified by the following key-value pair:
 ```javascript
@@ -55,7 +54,7 @@ To describe a function one has the optional key-value pairs of
 The string between `{}` denotes the type of the parameter/retval. The `arg1/arg2` specifies the name of the argument you are describing. The rest seems self explanatory. Note that any of these parts are optional except for the parameter name. So you can describe a parameter without saying its type (this is cool when you're documenting a strongly typed language, for then the parser automatically extracts the type of the arguement).
 
 ###Creating the Server
-Few still with me? Let's talk about starting up the server. Here is an example script:
+Still with me? Let's talk about starting up the server. Here is an example script:
 ```javascript
     var app = require('express')(),
         zdocs = require('zdocs');

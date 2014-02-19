@@ -7,7 +7,7 @@ block content
     each item in cat.items
       div.anchor(id=item.context.title)
       h3.categorysubheader= item.context.title
-      div.headercontent
+      div.subcontent
         |!{item.draw()}
 
 block sidebar

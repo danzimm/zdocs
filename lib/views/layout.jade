@@ -3,9 +3,15 @@ html
     head
         title #{doccenter} - #{pagetitle}
         each stylesheet in stylesheets
-            link(rel='stylesheet', type="text/css", href=stylesheet)
+            if typeof stylesheet  == 'string'
+                link(rel='stylesheet', type="text/css", href=stylesheet)
+            else
+                style(type="text/css") #{stylesheet.inner}
         each script in scripts
-            script(src=script)
+            if typeof script == 'string'
+                script(src=script)
+            else
+                script #{script.inner}
     body
         header.mainheader
             a(href=root)
